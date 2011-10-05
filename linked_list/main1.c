@@ -19,7 +19,6 @@ void insert(int x)
   while(temp->next != NULL)
     temp = temp->next;
 
-
   temp->next = list;
 
   printf("\n%d added", x);
@@ -47,12 +46,7 @@ void delete(int x)
   {
     printf("\nElement not found");
   }
-
-  
 }
-
-
-
 
 void show()
 {
@@ -72,7 +66,6 @@ void show()
   }
 }
 
-
 int main()
 { 
   char ch = 'y'; //to keep the loop on
@@ -81,7 +74,6 @@ int main()
   head = (struct node*)malloc(sizeof(struct node));
   head->next = NULL;
 
-  
   while(ch != 'n')
    {
     printf("\n1. Insert\n2. Delete\n3. Show\n"); //displaying options to user
