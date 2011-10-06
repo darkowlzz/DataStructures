@@ -18,8 +18,8 @@ void push(char a)
   }
   else
   {
-    top+=1;
-    stack[top] = a;
+    //top+=1;
+    stack[++top] = a;
   }
 }
 
@@ -90,7 +90,7 @@ void infix2postfix()
                   push(infix[i]);
                   break;
         default: postfix[p++] = infix[i];
-       }
+      }
     } 
   }
 
